@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.header-box {
+    aspect-ratio: 1920/1080;
+    width: 100%;
+    height: 100vh;
+
+    video {
+        height: 100%;
+    }
+}
 
 .header {
     position: fixed;
@@ -19,10 +28,27 @@
     transition: cubic-bezier(0.25, 0.74, 0.22, 0.99) 0.65s;
 }
 
+
+.lang-switcher {
+    height: 65px;
+    background: transparent;
+}
+
+.lang-menu {
+    transition: all .5s;
+    background-color: rgba(34, 17, 16, .4);
+    width: 140px;
+
+    li {
+        padding: 16px;
+        border-bottom: 1px solid white;
+    }
+}
+
 .color-primary {
-    color: rgba(254,239,198, 1);
+    color: white;
 
     &:hover {
-        color: rgba(254,239,198, 0.6);
+        color: rgba(254, 239, 198, 0.6);
     }
 }

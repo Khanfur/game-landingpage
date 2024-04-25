@@ -10,8 +10,9 @@ type Props = {
 export default function PageLayout({children, title}: Props) {
   return (
     <>   
-    <div>
     <Navigation />
+
+    <div className='header-box'>
       <video 
       autoPlay
       muted
@@ -20,6 +21,6 @@ export default function PageLayout({children, title}: Props) {
       className='w-100 h-100 object-cover'
       ></video>
     </div>
-       </>
+    </>
   );
 }
