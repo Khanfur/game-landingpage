@@ -36,7 +36,6 @@ export default async function LocaleLayout({
   return (
     <html className="h-full" lang={locale}>
       <body className={clsx(inter.className, 'flex h-full flex-col')}>
-        <Navigation />
         {children}
       </body>
     </html>

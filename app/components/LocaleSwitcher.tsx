@@ -14,5 +14,7 @@ export default function LocaleSwitcher() {
         </option>
       ))}
     </LocaleSwitcherSelect>
+
+
   );
 }
