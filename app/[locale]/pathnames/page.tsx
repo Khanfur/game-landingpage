@@ -12,7 +12,7 @@ export default function PathnamesPage({params: {locale}}: Props) {
   const t = useTranslations('PathnamesPage');
 
   return (
-      <div className="max-w-[490px]">
+      <div>
         {t.rich('description', {
           p: (chunks) => <p className="mt-4">{chunks}</p>,
           code: (chunks) => (

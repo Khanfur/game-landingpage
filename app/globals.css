@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.nav {
+    max-width: 100%;
+}
 .header-box {
     aspect-ratio: 1920/1080;
     width: 100%;
@@ -28,6 +32,35 @@
     transition: cubic-bezier(0.25, 0.74, 0.22, 0.99) 0.65s;
 }
 
+.header-content {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 180px;
+    text-align: center;
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            color: white;
+            font-size: 64px;
+        }
+    }
+
+    .download {
+        margin-top: 160px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 .lang-switcher {
     height: 65px;
@@ -50,5 +83,30 @@
 
     &:hover {
         color: rgba(254, 239, 198, 0.6);
+    }
+}
+
+.fx-features {
+    background-color: #1e244d;;
+
+    h2 {
+        font-size: 42px;
+        text-align: center;
+        color: white;
+        padding-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .feature {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+
+        p {
+            color: white;
+            margin-left: 32px;
+            max-width: 400px;
+        }
     }
 }
