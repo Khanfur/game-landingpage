@@ -1,4 +1,4 @@
-import PageLayout from '@/app/components/PageLayout';
+import PageLayout from '@/components/PageLayout';
 import {useTranslations} from 'next-intl';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
