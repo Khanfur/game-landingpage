@@ -1,8 +1,9 @@
 'use client';
 
 import clsx from 'clsx';
-import {useParams, usePathname, useRouter} from 'next/navigation';
+import {useParams} from 'next/navigation';
 import {ChangeEvent, ReactNode, useTransition} from 'react';
+import {useRouter, usePathname} from '@/navigation';
 
 type Props = {
   children: ReactNode;
